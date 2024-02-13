@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme for Light Theme -->
+    <style name="Base.Theme.FireNote" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize these attributes for the light theme. -->
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorOnPrimary">@color/my_light_on_primary</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/my_light_secondary</item>
+        <item name="colorOnSecondary">@color/my_light_on_secondary</item>
+        <!-- Status bar and navigation bar colors -->
+        <item name="android:navigationBarColor">@color/my_light_navigation_bar</item>
+    </style>
+
+    <!-- Theme for the App Bar that adapts to light/dark themes -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- These items will be overridden by dark theme attributes if dark mode is enabled -->
+        <item name="android:textColorPrimary">@color/my_light_on_primary</item>
+        <item name="android:background">@color/my_light_primary</item>
+    </style>
+
+    <!-- Theme overlay for Dark Theme -->
+    <style name="Theme.FireNote" parent="Base.Theme.FireNote">
+        <!-- Override attributes for the dark theme -->
+        <item name="colorPrimary">@color/my_dark_primary</item>
+        <item name="colorOnPrimary">@color/my_dark_on_primary</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/my_dark_secondary</item>
+        <item name="colorOnSecondary">@color/my_dark_on_secondary</item>
+        <!-- Status bar and navigation bar colors -->
+        <item name="android:navigationBarColor">@color/my_dark_navigation_bar</item>
+    </style>
+
+    <style name="MyMenuItemStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textColor">#ff0000</item> <!-- Change the text color to red -->
+    </style>
+
+    <!-- Other styles omitted for brevity -->
+</resources>
